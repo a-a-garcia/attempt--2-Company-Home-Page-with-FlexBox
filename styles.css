@@ -32,7 +32,7 @@ nav .left-side-nav{
     width: 10%;
 }
 
-/* CSS */
+/* Button */
 nav button {
   background: #FF4742;
   border: 1px solid #FF4742;
@@ -228,6 +228,7 @@ section .right-side-main p {
 
 
 
+
 /*Team section */
 #team {
     height: 100%;
@@ -290,3 +291,35 @@ section .right-side-main p {
     font-size: 2rem
 }
 
+/* footer */
+
+footer {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Caveat Brush', cursive;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-image: url(./images/output-onlinepngtools\ \(3\)\ \(1\).png);
+    background-size: cover;
+    font-size: 1.5rem;
+}
+
+footer #social-media {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer #logo-container{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer img {
+    height: inherit;
+    width: inherit;
+}
