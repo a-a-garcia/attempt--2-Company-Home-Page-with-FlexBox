@@ -26,11 +26,54 @@ nav {
     z-index: 100;
 }
 
+/*Media Queries for nav */
+/*TABLET*/
+@media only screen and (min-width: 1080px ) and (max-width: 1980px) {
+    nav {
+        padding: 1% 10%;
+    }
+}
+
 nav .left-side-nav{
     display: flex;
     align-items: center;
     width: 10%;
 }
+
+/*PHONE*/
+@media only screen and (min-width: 414px ) and (max-width: 1080px) {
+    nav {
+        padding: 1% 0;
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
+
+    nav .img {
+        height: 40px !important;
+        width: 50px !important;
+    }
+
+    nav .left-side-nav {
+        margin-right: 40%;
+    }
+
+    nav .right-side-nav h3 {
+        padding-right: 2.5%;
+    }
+
+    nav button {
+        padding: 2.5% !important;
+        font-size: 10px !important;
+        margin-right: 5% !important;
+    }
+}
+
+nav .left-side-nav{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+
 
 /* Button */
 nav button {
@@ -147,6 +190,45 @@ section .right-side-main p {
     line-height: 8rem;
 }
 
+/*Middle section Media Queries*/
+/*TABLET*/
+@media only screen and (min-width: 1080px) and (max-width: 1980px) {
+    .right-side-main h2 {
+        font-size: 5rem !important;
+        padding: 0 10px;
+   }
+   .right-side-main p {
+        font-size: 3.5rem !important;
+   }
+   #middle {
+        border-top: 130px solid lightyellow;
+   }
+}
+/*MOBILE*/
+@media only screen and (min-width: 414px) and (max-width: 1080px) {
+    #middle {
+        border-top: 80px solid lightyellow;
+    }
+
+    section .right-side-main {
+        height: 700px !important;
+    }
+
+    section .right-side-main h2  {
+        font-size: 2.5rem !important;
+    }
+
+    section .right-side-main p {
+        font-size: 2rem !important;
+        line-height: 3rem;
+    }
+
+    section .left-side-main {
+        height: 700px !important;
+    }
+}
+
+
 /*Sample Menu section */
 .sample-menu {
     height: 100%;
@@ -226,7 +308,60 @@ section .right-side-main p {
     font-size: 1.5rem;
 }
 
+@media only screen and (min-width: 1080px) and (max-width: 1980px) {
+    .sample-menu-header {
+        font-size: 3rem !important;
+    }
 
+    .menu-item-text {
+        height: 500px !important;
+    }
+
+    .menu-item-text H1 {
+        font-size: 3rem !important;
+    }
+
+    .menu-item-text p {
+        font-size: 2rem !important;
+    }
+
+    .menu-item-text p.emojis {
+        font-size: 0.75rem !important;
+    }
+
+    .menu-item-img-container{
+        width: 400px !important;
+        height: 500px !important;
+    }
+}
+
+@media only screen and (min-width: 414px ) and (max-width: 1080px) {
+    .sample-menu-header {
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+
+    .menu-item-img-container{
+        width: 150px !important;
+        height: 250px !important;
+    }
+
+    .menu-item-text {
+        height: 250px !important;
+    }
+
+    .menu-item-text H1 {
+        font-size: 1.5rem !important;
+    }
+
+    .menu-item-text p {
+        font-size: 1rem !important;
+    }
+
+    .menu-item-text p.emojis {
+        font-size: 0.25rem !important;
+    }
+}
 
 
 /*Team section */
@@ -240,6 +375,7 @@ section .right-side-main p {
 
 #team #meet-the-team {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 98%;
@@ -270,7 +406,6 @@ section .right-side-main p {
 #team #vertical-line img {
     width: inherit;
     height: inherit;
-    width: 200px;
 }
 
 #team .about-text {
@@ -284,12 +419,59 @@ section .right-side-main p {
 
 #team .about-text h1 {
     font-size: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 #team .about-text p {
-    font-size: 2rem
+    font-size: 2.75rem
 }
+
+@media only screen and (min-width: 1080px) and (max-width: 1980px) {
+    #team .photo-container img {
+        height: 300px;
+        width: 600px;
+    }
+
+    #team .about-text h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #team .about-text p {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1080px) {
+    #team .photo-container img {
+        height: 150px;
+        width: 300px;
+    }
+
+    .meet-the-team-header h2 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    #meet-the-team #vertical-line {
+        width: 100px;
+    }
+
+    #meet-the-team .about-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #team .about-text p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+
+
 
 /* footer */
 
@@ -322,4 +504,18 @@ footer #logo-container{
 footer img {
     height: inherit;
     width: inherit;
+}
+
+@media only screen and (min-width: 414px) and (max-width: 1080px) {
+    footer {
+        font-size: 0.5rem;
+    }
+
+    footer #logo-container{
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
 }
