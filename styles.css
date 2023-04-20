@@ -43,9 +43,10 @@ nav .left-side-nav{
 /*PHONE*/
 @media only screen and (min-width: 390px ) and (max-width: 1080px) {
     nav {
-        padding: 5%;
+        padding: 2% 5%;
         justify-content: space-evenly;
         font-size: 1rem;
+        padding-right: 10%;
     }
 
     nav .img {
@@ -343,11 +344,11 @@ section .right-side-main p {
 
     .menu-item-img-container{
         width: 150px !important;
-        height: 250px !important;
+        height: 200px !important;
     }
 
     .menu-item-text {
-        height: 250px !important;
+        height: 350px !important;
         width: 250px !important;
     }
 
